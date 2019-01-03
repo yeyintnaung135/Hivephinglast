@@ -294,7 +294,7 @@ echo header("Cache-Control:no-store,no-cache,must-revalidate,max-age=0");header(
                             }
                             $see_project = DB::connection('mysql_service')->table('request')->where([['post_id', '=', $d->id], ['requester_id', '=', Auth::user()->id]]);
                             ?>
-                            @if(($check_point > 0 or $check_buy_point > 0))
+                            @if(($check_point > $d->project_define_point) or ($check_buy_point > $d->project_define_point))
                                 @if($see_project->count() > 0)
                                     @if($see_project->first()->status == 'rq')
 

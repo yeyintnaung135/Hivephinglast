@@ -771,7 +771,7 @@ echo header("Cache-Control:no-store,no-cache,must-revalidate,max-age=0");header(
         <div class="col-xs-12 col-sm-4" style="text-align: center;">
             <div class="col-xs-3 col-sm-3">
             </div>
-            <div class="col-xs-12 col-sm-6" style="text-align:left;margin-top:4%;">
+            <div class="col-xs-12 col-sm-12" style="text-align:left;margin-top:4%;">
                 <span class="fa fa-map-marker" style="font-size:22px;"></span>
 
                 <span style="font-weight:bolder;">Address</span><br>
